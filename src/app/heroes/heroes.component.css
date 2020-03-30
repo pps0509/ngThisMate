@@ -1,0 +1,14 @@
+ul {
+    list-style: none;
+}
+
+
+ul li:hover {
+    color: darkcyan;
+    cursor: pointer;
+}
+
+ul li.selected {
+    color:darkgreen;
+    font-weight: bold;
+}
