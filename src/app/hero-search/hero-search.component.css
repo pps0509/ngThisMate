@@ -1,0 +1,7 @@
+.search-result li {
+    list-style-type: none;
+}
+
+.search-result li a {
+    text-decoration: none;
+}

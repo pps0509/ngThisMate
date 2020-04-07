@@ -12,3 +12,7 @@ ul li.selected {
     color:darkgreen;
     font-weight: bold;
 }
+
+.list-group-item-hover:hover {
+    background-color: red;
+}
