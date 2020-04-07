@@ -1,18 +1,11 @@
-ul {
-    list-style: none;
-}
 
-
-ul li:hover {
-    color: darkcyan;
-    cursor: pointer;
-}
-
-ul li.selected {
-    color:darkgreen;
-    font-weight: bold;
-}
 
 .list-group-item-hover:hover {
-    background-color: red;
+    background-color: #69B3FE;
+    
+}
+
+.list-group-item-hover a:hover {
+    text-decoration: none;
+    color: white;
 }
