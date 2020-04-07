@@ -1,12 +1,22 @@
 
 
+<div class="col-4">
+    <ul class="heroes list-group">
+        <li class="list-group-item" *ngFor="let hero of heroes">
+            <a routerLink="/detail/{{hero.id}}">
+                <span class="badge"> {{hero.id}}</span> {{hero.name}}
+            </a>
+            <button style="float:right;" class="btn btn-danger" (click)="delete(hero)">Delete</button>
+        </li>
+    </ul>
+</div>
 
-<ul class="heroes">
-    <li *ngFor="let hero of heroes">
-        <a routerLink="/detail/{{hero.id}}">
-            <span class="badge"> {{hero.id}}</span> {{hero.name}}
-        </a>
-    </li>
-</ul>
+<div class="input-group col-4 mt-2">
+    <input #heroName class="form-control" placeholder="Type New Hero Name"/>
+    <div class="input-group-append">
+        <button class="btn btn-primary" (click)="add(heroName.value); heroName.value = '';">Add Hero</button>
+    </div>
+</div>
+
 
 
